@@ -148,6 +148,7 @@ height: 60vh !important;
 }
 }
 </style>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body class="bg-gray-50 overflow-x-hidden">
 <!-- Scroll Progress Indicator -->
@@ -292,7 +293,7 @@ From university enrollment to final thesis submission – we provide professiona
 <!-- Services Section -->
 <section id="services" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
+<div class="text-center mb-10">
 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
 🎯 Our <span class="text-gradient">Premium Services</span>
 </h2>
@@ -301,12 +302,28 @@ Comprehensive academic support designed to elevate your research journey
 </p>
 </div>
 
-<div class="grid lg:grid-cols-3 gap-10">
+<!-- Tabs -->
+<div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 mb-10">
+<button class="service-tab px-5 py-2 rounded-full font-semibold border border-indigo-200 text-indigo-700 bg-indigo-50 hover:bg-indigo-100 transition-all" data-tab="phd">
+PhD Thesis Guidance
+</button>
+<button class="service-tab px-5 py-2 rounded-full font-semibold border border-green-200 text-green-700 bg-green-50 hover:bg-green-100 transition-all" data-tab="paper">
+Research Paper Assistance
+</button>
+<button class="service-tab px-5 py-2 rounded-full font-semibold border border-purple-200 text-purple-700 bg-purple-50 hover:bg-purple-100 transition-all" data-tab="synopsis">
+Synopsis Preparation
+</button>
+<button class="service-tab px-5 py-2 rounded-full font-semibold border border-pink-200 text-pink-700 bg-pink-50 hover:bg-pink-100 transition-all" data-tab="editing">
+Editing & Proofreading
+</button>
+</div>
+
+<div class="grid lg:grid-cols-1 gap-10">
 <!-- PhD Thesis Guidance -->
-<div class="premium-card p-10 rounded-3xl border-2 border-indigo-100 relative overflow-hidden">
+<div class="premium-card p-10 rounded-3xl border-2 border-indigo-100 relative overflow-hidden service-card" data-card="phd">
 <div class="absolute top-0 right-0 bg-gradient-to-l from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-bl-2xl text-sm font-semibold">
 Most Popular
-</div>
+ </div>
 <div class="service-icon mb-6">📖</div>
 <h3 class="text-2xl font-bold text-gray-900 mb-4">PhD Thesis Guidance</h3>
 <div class="text-4xl font-bold text-indigo-600 mb-6">Starting ₹50,000</div>
@@ -360,7 +377,7 @@ Choose This Plan
 </div>
 
 <!-- Research Paper Assistance -->
-<div class="premium-card p-10 rounded-3xl border-2 border-green-100">
+<div class="premium-card p-10 rounded-3xl border-2 border-green-100 service-card hidden" data-card="paper">
 <div class="service-icon mb-6">📄</div>
 <h3 class="text-2xl font-bold text-gray-900 mb-4">Research Paper Assistance</h3>
 <div class="text-4xl font-bold text-green-600 mb-6">Starting ₹2,000</div>
@@ -371,7 +388,7 @@ Choose This Plan
 <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
 </svg>
-</div>
+ </div>
 <span class="text-gray-700">Journal-ready formatting (UGC CARE / Scopus)</span>
 </div>
 <div class="flex items-start gap-3">
@@ -406,7 +423,7 @@ Choose This Plan
 </div>
 
 <!-- Synopsis Preparation -->
-<div class="premium-card p-10 rounded-3xl border-2 border-purple-100">
+<div class="premium-card p-10 rounded-3xl border-2 border-purple-100 service-card hidden" data-card="synopsis">
 <div class="service-icon mb-6">📋</div>
 <h3 class="text-2xl font-bold text-gray-900 mb-4">Synopsis Preparation</h3>
 <div class="text-4xl font-bold text-purple-600 mb-6">Starting ₹8,000</div>
@@ -417,6 +434,52 @@ Choose This Plan
 <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
 </svg>
+ </div>
+
+<!-- Editing & Proofreading -->
+<div class="premium-card p-10 rounded-3xl border-2 border-pink-100 service-card hidden" data-card="editing">
+<div class="service-icon mb-6">📝</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Editing & Proofreading</h3>
+<div class="text-4xl font-bold text-pink-600 mb-6">Starting ₹3,000</div>
+
+<div class="space-y-4 mb-8">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+<svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-gray-700">Grammar, syntax, and clarity improvements</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+<svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-gray-700">UGC-compliant formatting and citations</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+<svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-gray-700">Reference and plagiarism-check support</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+<svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-gray-700">Final polish for submission readiness</span>
+</div>
+</div>
+
+<button class="w-full bg-gradient-to-r from-pink-600 to-rose-600 text-white py-4 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+Choose This Plan
+</button>
 </div>
 <span class="text-gray-700">Problem identification mentoring</span>
 </div>
@@ -1086,6 +1149,7 @@ AM
 <option value="phd-thesis">PhD Thesis Guidance</option>
 <option value="research-paper">Research Paper Assistance</option>
 <option value="synopsis">Synopsis Preparation</option>
+<option value="editing">Editing & Proofreading</option>
 <option value="consultation">General Consultation</option>
 </select>
 </div>
@@ -1350,6 +1414,29 @@ window.open(whatsappUrl, '_blank');
 });
 }
 });
+
+// Services tabs toggle
+const serviceTabs = document.querySelectorAll('.service-tab');
+const serviceCards = document.querySelectorAll('.service-card');
+
+function activateServiceTab(target){
+  serviceTabs.forEach(t => {
+    const isActive = t.getAttribute('data-tab') === target;
+    t.classList.toggle('ring-2', isActive);
+    t.classList.toggle('ring-indigo-400', isActive);
+  });
+  serviceCards.forEach(c => {
+    const isMatch = c.getAttribute('data-card') === target;
+    c.classList.toggle('hidden', !isMatch);
+  });
+}
+
+serviceTabs.forEach(tab => {
+  tab.addEventListener('click', () => activateServiceTab(tab.getAttribute('data-tab')));
+});
+
+// default to first tab
+if (serviceTabs.length) activateServiceTab(serviceTabs[0].getAttribute('data-tab'));
 
 // Enhanced scroll effects
 window.addEventListener('scroll', function() {
